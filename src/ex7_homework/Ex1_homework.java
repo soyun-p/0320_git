@@ -31,17 +31,17 @@ public class Ex1_homework {
 				String res = new String(read);  // read배열에 파일 내용을 스트링 타입으로 바꿔서 저장.
 				
 				
-				int num = 0;  // 숫자 더할 변수
+				int sum = 0;  // 숫자 더할 변수
 				
 				for(int i = 0; i < res.length(); i++) {
 					
 					if( res.charAt(i) < '9' && res.charAt(i) > '0' ) {
-						num += res.charAt(i)-'0';		
+						sum += res.charAt(i)-'0';		
 					} // if
 				
 				} // for
 				
-				System.out.println("결과 : " + num);
+				System.out.println("결과 : " + sum);
 				
 				
 			} catch (Exception e) {
